@@ -1,6 +1,6 @@
 logging:
   level:
-    org.springframework: DEBUG
+#    org.springframework: DEBUG
     org.hibernate.SQL: DEBUG
     org.hibernate.type.descriptor.sql.BasicBinder: TRACE
 
@@ -11,6 +11,9 @@ logging:
 spring:
   datasource:
     url: jdbc:${DATABASE_URL:mysql://usr:User12345@localhost:3306/development}
+#    url: jdbc:mysql://${MYSQL_HOST:localhost}:3304/development
+#    username: usr
+#    password: User12345
 
 server:
   port: 4000
